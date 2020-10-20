@@ -1,0 +1,47 @@
+* {
+    border: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif; /* Sport result font */
+}
+
+h1 {
+    color: blue;
+}
+
+.linkscontainer {
+    border: 2px solid rgb(67, 112, 0);
+    width: 100%;
+    
+}
+
+.links {
+    background-color: rgb(37, 27, 27);
+    display: inline-block;
+    width: 50%;
+    height: 60vh;
+    padding-top: 40vh;
+    text-align: center;
+    font-size: 3rem;
+}
+
+a.homepage {
+    color: white;
+    text-decoration: none;
+}
+
+.homecontainer {
+    background-color: rgb(37, 27, 27);
+    display: inline-block;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+a.homelink {
+    color:white;
+    text-decoration: none;
+}

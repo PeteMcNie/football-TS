@@ -1,0 +1,60 @@
+[
+    {
+      "id": 303758,
+      "competition": { "id": 2021, "name": "Premier League", "area": "[Object]" },
+      "season": {
+        "id": 619,
+        "startDate": "2020-09-12",
+        "endDate": "2021-05-23",
+        "currentMatchday": 2,
+        "winner": null
+      },
+      "utcDate": "2020-09-13T00:00:00Z",
+      "status": "POSTPONED",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2020-09-11T00:00:09Z",
+      "odds": { "msg": "Activate Odds-Package in User-Panel to retrieve odds." },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": "[Object]",
+        "halfTime": "[Object]",
+        "extraTime": "[Object]",
+        "penalties": "[Object]"
+      },
+      "homeTeam": { "id": 328, "name": "Burnley FC" },
+      "awayTeam": { "id": 66, "name": "Manchester United FC" },
+      "referees": []
+    },
+    {
+      "id": 303773,
+      "competition": { "id": 2021, "name": "Premier League", "area": "[Object]" },
+      "season": {
+        "id": 619,
+        "startDate": "2020-09-12",
+        "endDate": "2021-05-23",
+        "currentMatchday": 2,
+        "winner": null
+      },
+      "utcDate": "2020-09-19T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 2,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2020-09-20T10:25:15Z",
+      "odds": { "msg": "Activate Odds-Package in User-Panel to retrieve odds." },
+      "score": {
+        "winner": "AWAY_TEAM",
+        "duration": "REGULAR",
+        "fullTime": "[Object]",
+        "halfTime": "[Object]",
+        "extraTime": "[Object]",
+        "penalties": "[Object]"
+      },
+      "homeTeam": { "id": 66, "name": "Manchester United FC" },
+      "awayTeam": { "id": 354, "name": "Crystal Palace FC" },
+      "referees": [ "[Object]", "[Object]", "[Object]", "[Object]", "[Object]" ]
+    }
+]

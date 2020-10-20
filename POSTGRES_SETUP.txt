@@ -1,0 +1,38 @@
+<!-- POSTGRES SETUP
+
+1. In terminal: npm i pg pg-hstore sequelize sequelize-cli
+2. In terminal: touch .sequelizerc (creates a file called .sequelizerc)
+3. In .sequelizerc add code seen in the file in this project (you are defining the path to the database files)
+4. In terminal: npx sequelize init (creates the config, migrations, models and seeders files)
+5. Alter config.js file, (in this project, server/db/config/config.js):
+ - url: you will define this in .env file
+ - dialect: the db you are using
+ - username: the username you have defined in the .env file
+ - password: the password you have defined in the .env file
+ - database: what we will call our DB
+ - host and port: use defaults
+
+6. In terminal use postgres: (you may need: brew install postgresql, then: brew services start postgresql) In terminal: psql postgres
+7. To create a new postgres user: postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';
+8. To enable user 'me' to create a db: postgres=# ALTER ROLE me CREATEDB;
+9. In terminal: \du (lists all users and roles)
+10. To connect user with postgres, in terminal: psql -d postgres -U me (you will see new prompt in terminal: postgres=> instead of postgres=#)
+NOTE: If stuck use commandline to check what DB you have and who the OWNER is to help debug
+
+11. In terminal: createdb <db_name> -U <db_user> (creates a new db, eg. createdb horses -U me)
+12. Now that you have created a db, link this to your project config file using a .env file
+ - In terminal: touch .env
+ - Add the url that will be called in the config file eg. DEV_DATABASE_URL=postgres://<db_user>:<db_password>@127.0.0.1:5432/<db_name>
+ - NOTES: <db_user> = me, <db_password> = password, <db_name> = horses
+
+13. To CREATE MODEL AND MIGRATION, in terminal: npx sequelize model:generate --name Matches --attributes homeTeam:string,awayTeam:string,winner:string       NOTE: No spaces as per example                  /
+14. AT THIS POINT YOU MAY NEED TO ADD NOT_NULLABLE and FOREIGN KEYS etc          /
+15. Once sorted, in terminal: npx sequelize db:migrate                         /
+                                                                             /
+16. To ADD SEED DATA, in terminal: npx sequelize seed:generate --name Matches
+17. In seed files, add seed data, files have example of how to do this
+18. In terminal: npx sequelize db:seed:all
+
+
+This should create and seed the db for you, ready for calls. :-)
+ -->
