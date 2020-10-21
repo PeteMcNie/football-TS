@@ -8,7 +8,7 @@
   "scripts": {
     "format": "npx eslint . --fix --ext .js,.jsx",
     "lint": "npx eslint . --ext .js,.jsx --ignore-path .eslintignore",
-    "build": "webpack",
+    "build": "tsc",
     "dev": "run-p dev:client dev:server",
     "dev:client": "webpack --watch",
     "dev:server": "nodemon server",
