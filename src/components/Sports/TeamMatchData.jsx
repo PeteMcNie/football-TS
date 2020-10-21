@@ -17,16 +17,16 @@ function TeamMatchData (props) {
             <th>Winner</th>
           </tr>
         </thead>
-        {teamMatchData.map(el =>
-          <tbody key='table'>
+        <tbody>
+          {teamMatchData.map(el =>
             <tr key={el.id}>
               <td>{el.matchday}</td>
               <td>{el.homeTeam.name}</td>
               <td>{el.awayTeam.name}</td>
               <td>{el.score.winner}</td>
             </tr>
-          </tbody>
-        )}
+          )}
+        </tbody>
       </table>
     </div>
   )
