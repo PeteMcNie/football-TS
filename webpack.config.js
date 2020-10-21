@@ -1,9 +1,9 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'server/public'),
+    path: path.join(__dirname, '/build'),
     filename: 'bundle.js'
   },
   mode: 'development',
@@ -21,7 +21,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
   devtool: 'source-map',
   devServer: {
