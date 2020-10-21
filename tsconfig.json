@@ -67,7 +67,7 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "./client/index.tsx"
+    "src/index.tsx"
   ],
   "exclude": [
     "./build",
