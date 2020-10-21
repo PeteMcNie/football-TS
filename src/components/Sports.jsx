@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TeamRequest from './Sports/TeamRequest'
+import TeamRequest from './Sports/TeamRequest.tsx'
 import TeamMatchData from './Sports/TeamMatchData'
 import HomeLink from './Links/HomeLink'
 

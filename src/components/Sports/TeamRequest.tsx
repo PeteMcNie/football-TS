@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import { getTeamAction } from '../../actions/footballActions'
 
-function TeamRequest (props) {
+function TeamRequest () {
   const [state, setState] = useState('')
+  const dispatch = useDispatch()
 
   function handleChange (evt) {
     // console.log(evt.target.value)
@@ -15,7 +16,7 @@ function TeamRequest (props) {
   function submitHandler (state) {
     // console.log(state)
     if (state) {
-      props.dispatch(getTeamAction(state))
+      dispatch(getTeamAction(state))
     }
   }
 
@@ -32,4 +33,4 @@ function TeamRequest (props) {
   )
 }
 
-export default connect()(TeamRequest)
+export default TeamRequest
